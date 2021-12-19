@@ -11,7 +11,7 @@ class TeamAdmin(admin.ModelAdmin):
     thumbnail.short_description = 'Photo'
     list_display = ('id', 'thumbnail', 'first_name', 'designation', 'created_date') # Defining table column names for 'Team' table
     list_display_links = ('id', 'thumbnail' , 'first_name',) # This makes id & first_name column clickable
-    search_fields = ('first_name', 'last_name', 'designation')
-    list_filter = ('designation',)
+    search_fields = ('first_name', 'last_name', 'designation') # We can search by this fields
+    list_filter = ('designation',) # We get a filter option in the side on these fields
     
 admin.site.register(Team, TeamAdmin)

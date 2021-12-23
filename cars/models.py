@@ -112,10 +112,12 @@ class Car(models.Model):
     doors = models.CharField(choices=door_choices, max_length=10)
     passengers = models.IntegerField()
     vin_no = models.CharField(max_length=100)
-    milage = models.IntegerField()
+    milage_city = models.IntegerField()
+    milage_highway = models.IntegerField()
     fuel_type = models.CharField(max_length=50)
     no_of_owners = models.CharField(max_length=100)
     is_featured = models.BooleanField(default=False)
+    warranty = models.IntegerField()
     created_date = models.DateTimeField(default=datetime.now, blank=True)
 
     def __str__(self):

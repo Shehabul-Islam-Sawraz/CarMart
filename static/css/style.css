@@ -7179,7 +7179,7 @@ table {
 }
 
 .tabbing-box .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    color: #fff;
+    color: #fff !important;
     border-radius: 0;
 }
 

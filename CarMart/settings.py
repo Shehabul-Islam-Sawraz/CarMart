@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "pages.apps.PagesConfig",
     "cars.apps.CarsConfig",
+    "contacts.apps.ContactsConfig",
     "ckeditor",
     "django.contrib.humanize",
     "accounts.apps.AccountsConfig",
@@ -162,10 +163,11 @@ SITE_ID = 1
 
 
 # Email sending
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'rathan.kumar049@gmail.com'
-EMAIL_HOST_PASSWORD = 'qWerty@124'
+EMAIL_HOST_USER = 'shehabulislamsawraz@gmail.com'
+EMAIL_HOST_PASSWORD = 'qwerty@124'
 EMAIL_USE_TLS = True
 
 
